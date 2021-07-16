@@ -1,0 +1,24 @@
+// Dane użytkownika zapisane są w bazie danych //
+// Użytkownik loguje się formularzem przy pomocy hasła i loginu. //
+
+Walidacja formularza jest przeprowadzona przy pomocy JSa i PHPa (pole login i hasło są wymagane)
+
+Po zalogowaniu się użytkownikowi wyświetla się komunikat o pomyślnym zalogowaniu
+
+//Użytkownik ma dostęp do treści (opis kalkulatora), które są udostępnione dopiero po zalogowaniu//
+
+//Po zalogowaniu użytkownik widzi kalkulator oparty o JS, który oblicza objętość kuli (π = 3.14)//
+
+Kalkulator reaguje na wprowadzenie niepoprawnych parametrów
+
+Wynik objętości kuli zapisywany jest do bazy danych po kliknięciu ZAPISZ
+
+//Użytkownik może się wylogować//
+
+//Dostęp do kalkulatora i treści jest zablokowany użytkownikom nie zalogowanym//
+
+Wygląd strony powinien być spójny i kolorowy (mile widziane zdobione pola formularzy, przyciski)
+
+Skorzystaj z Google Grafika, tam na pewno znajdziesz inspirację odnośnie wyglądu strony
+
+//Cały projekt wrzucaj regularnie na swoje repo.//

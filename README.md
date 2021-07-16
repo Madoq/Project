@@ -1,0 +1,2 @@
+# D1 of "BIG TEST"
+project start nice, i have made before few of utilites used in this so i just need to inplemate them here. only problem that happend it was after about an 4/5h in, i change something and everything stoped working. after 2h i was able to back to that point. there left only few things to fix, and add. after that i need to implement more css to make it looks better. in next ver. i ll add data base i sql.
