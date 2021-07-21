@@ -20,29 +20,32 @@ if(isset($_SESSION['logged_id']))
 </head>
 
 <body>
-    <div class="container">
-
+<section>
         <header>
-            <h1>Calc</h1>
+            <div class="header">
+                <h1>Sphere Volume Calculator</h1>
+            </div>
         </header>
 
         <main>
             <article>
-                <form method="post" action="login.php">
-                    <label>login <input type="text" name="login"></label>
-                    <label>Hasło <input type="password" name="pass"></label>
-                    <input type="submit" value="Zaloguj się!">
-                    <?php 
-                        if (isset($_SESSION['bad_attempt']))
-                        {
-                            echo '<p>Niepoprawny login lub hasło</p>';
-                            unset($_SESSION['bad_attempt']);
-                        }
-                    ?>
-                </form>
+                <div id="container">
+                    <form method="post" action="login.php">
+                        <label class="topic">Login: <input type="text" name="login" ></label>
+                        <label class="topic">Hasło: <input type="password" name="pass" ></label>
+                        <input type="submit" id="login_site" value="Zaloguj się!">
+                        <?php 
+                            $_SESSION['good_attempt'] = true;
+                            if (isset($_SESSION['bad_attempt']))
+                            {
+                                echo'<div id="redtxt">'.$_SESSION['bad_attempt'].'</div>';
+                                unset($_SESSION['bad_attempt']);
+                            }
+                        ?>
+                    </form>
+                </div>
             </article>
         </main>
-
-    </div>
+</section>
 </body>
 </html>

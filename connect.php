@@ -1,9 +1,8 @@
 <?php
- 
-    return ['host' => 'localhost',
-            'user' => 'root',
-            'password' => '',
-            'database' => 'project'
-];
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'project';
+    
 
 ?>

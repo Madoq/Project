@@ -1,25 +1,101 @@
 body
 {
-    background-image: url("img/hexellence.png");
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg,#E73C7E,#23A6D5,#23D5AB);
+    position: relative;
     font-size: 20px;
+    color:#222222;
     /* Background pattern from Toptal Subtle Patterns */
+}
+.header
+{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 50px;
+}
+#greentxt
+{
+    color: #00bd19d8;
+    font-size: 20px;
+    text-align: center;
+}
+#redtxt
+{
+    padding-top: 5px;
+    color: #bd2626d8;;
+    font-size: 20px;
+    text-align: center;
+}
+#login_site
+{
+    background-color:rgb(51, 51, 51);
+    font-size: 30px;
+    color:#efefef;
 }
 #container
 {
+    font-size: 20px;
     background-color: white;
     width: 300px;
-    padding: 50px;
+    padding: 45px;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-    -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-    box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.7);
+    -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.7);
+    box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.7);
 }
+.topic
+{
+    
+  text-align: center;
+    font-size: 30px;
+}
+button[name=logout]
+{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    position: absolute;
+    left:    0px;
+    bottom:   65px;
+}
+button[name=move]
+{
+    width: 300px;
+    background-color:rgb(51, 51, 51);
+    font-size: 30px;
+    color:#efefef;
+    padding: 15px 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline:none;
+}
+button[name=move]:hover
+{
+    background-color: #25a02b;
+}
+#result
+{
+    color: #bd2626d8;
+    font-size: 20px;
+    text-align: center;
+}
+
 input[type=text],
 input[type=password]
 {
-    margin-top: 10px;
     width: 300px;
     background-color: #efefef;
     color:#666;
@@ -27,6 +103,8 @@ input[type=password]
     border-radius: 5px;
     font-size: 20px;
     padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     box-sizing: border-box;
     outline:none;
 }
@@ -40,18 +118,13 @@ input[type=password]:focus
     border: 2px solid #a5cda5;
     background-color: #e9f3e9;
 }
-input[type=submit]:focus
-{
-    -webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
-    -moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
-    box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
-}
+
 input[type=submit]
 {
     width: 300px;
-    background-color: #36b03c;
-    font-size: 20px;
-    color: #fff;
+    background-color:rgb(51, 51, 51);
+    font-size: 30px;
+    color:#efefef;
     padding: 15px 10px;
     margin-top: 20px;
     border: none;
@@ -63,40 +136,4 @@ input[type=submit]
 input[type=submit]:hover
 {
     background-color: #25a02b;
-}
-
-input::-webkit-input-placeholder
-{
-    color: #999;
-}
-input:focus::-webkit-input-placeholder
-{
-    color: #428C42;
-}
-/* Firefox < 19 */
-input:-moz-placeholder
-{
-    color: #999;
-}
-input:focus:-moz-placeholder
-{
-    color: #428C42;
-}
-/* Firefox > 19 */
-input::-moz-placeholder
-{
-    color: #999;
-}
-input:focus::-moz-placeholder
-{
-    color: #428C42;
-}
-/* Internet Explorer 10 */
-input:-ms-input-placeholder
-{
-    color: #999;
-}
-input:focus:-ms-input-placeholder
-{
-    color: #428C42;
 }

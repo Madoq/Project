@@ -3,13 +3,13 @@
 
 Walidacja formularza jest przeprowadzona przy pomocy JSa i PHPa (pole login i hasło są wymagane)
 
-Po zalogowaniu się użytkownikowi wyświetla się komunikat o pomyślnym zalogowaniu
+//Po zalogowaniu się użytkownikowi wyświetla się komunikat o pomyślnym zalogowaniu//
 
 //Użytkownik ma dostęp do treści (opis kalkulatora), które są udostępnione dopiero po zalogowaniu//
 
 //Po zalogowaniu użytkownik widzi kalkulator oparty o JS, który oblicza objętość kuli (π = 3.14)//
 
-Kalkulator reaguje na wprowadzenie niepoprawnych parametrów
+//Kalkulator reaguje na wprowadzenie niepoprawnych parametrów//
 
 Wynik objętości kuli zapisywany jest do bazy danych po kliknięciu ZAPISZ
 

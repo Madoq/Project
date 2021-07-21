@@ -1,12 +1,11 @@
 <?php
 
-$config = require_once 'connect.php';
+require_once 'connect.php';
+$dsn = "mysql:host=$host;dbname=$database;charset=UTF8";
 try 
 {
-    $db = new PDO("mysql:host={$config['host']};dbname={$config['database']}; charset=utf8",
-    $config['user'],$config['password'],
-    [PDO::ATTR_EMULATE_PREPARES => false,
-     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
+    $db = new PDO($dsn, $user, $password, $options);
 }
 catch (PDOException $error)
 {
